@@ -1,0 +1,70 @@
+.container{
+    display: grid;
+    /*grid-template-columns: 50px 300px;*/
+    /*grid-template-columns: repeat(4, 50px);*/ /*Compartiendo el mismo tamaño para 4 elementos */
+    /*grid-template-rows: repeat(2, 100px);*/
+    /*grid-template-columns: 1fr 1fr;/*fracciones (la parte restante del otro)*/
+    /*grid-template-rows: 2fr 2fr;*/
+    grid-template-areas: "head head" 
+                         "menu main"
+                         "foot foot";
+
+}
+.container{
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+
+.item1{grid-area: head; background-color: aqua}
+
+.item2{grid-area: menu; background-color: blue}
+
+.item3{grid-area: main; background-color: blueviolet}
+
+.item4{grid-area: foot; background-color: gold}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.container{
+    border: 2px solid rgb(255, 0, 0);
+    background-color: rgb(192, 148, 234);
+    text-align: center;
+}
+.item1{
+    background-color: aqua;
+}
+
+.item2{
+    background-color: blue;
+    color: white;
+}
+
+.item3{
+    background-color: yellow;
+}
+
+.item4{
+    background-color: darkorange;
+}
+
+*/
